@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <title>Adwin</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./src/pictures/logo.png" alt="logo" />
+      </div>
+      <div class="header__navigation">
+        <nav>
+          <ul>
+            <li class="header__navigation-item current">
+              <a href="/">Главная</a>
+            </li>
+            <li class="header__navigation-item carret">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="header__navigation-item"><a href="#">Блог</a></li>
+            <li class="header__navigation-item"><a href="#">Отзывы</a></li>
+            <li class="header__navigation-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__tools">
+        <a class="header__cart" href="#" id="cart">
+          <img src="./src/icons/shopping-basket.svg" alt="shopping-basket" />
+        </a>
+
+        <div class="header__callback">
+          <button class="btn primary" id="callback">
+            Заказать обратный звонок
+          </button>
+        </div>
+        <div class="header__burger">
+          <button class="burger" id="burger">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 4H14"
+                stroke="#1F2937"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 8H14"
+                stroke="#1F2937"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 12H14"
+                stroke="#1F2937"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <button class="header__close" id="headerClose">
+          <img src="./src/icons/close.svg" alt="close" />
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <ul>
+          <li class="current mobile-menu__item"><a href="/">Главная</a></li>
+          <li class="mobile-menu__item"><a href="#">Каталог</a></li>
+          <li class="mobile-menu__item"><a href="#">Блог</a></li>
+          <li class="mobile-menu__item"><a href="#">Отзывы</a></li>
+          <li class="mobile-menu__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu__callback">
+          <button class="btn primary" id="callbackMenu">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="content-overlay" id="contentOverlay"></div>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__text">
+            <div>Многа</div>
+            <div>Уточек</div>
+          </div>
+          <div class="hero__images">
+            <div class="image-main">
+              <img src="./src/pictures/duck.png" alt="duck" />
+            </div>
+            <div class="image-text">
+              <img src="./src/pictures/krya.svg" alt="krya" />
+            </div>
+          </div>
+          <div class="hero__content">
+            <div class="hero__content-text">
+              Маленький друг найдётся для каждого в этом кряквенно жёлтом мире
+            </div>
+            <div class="hero__content-btn">
+              <button class="btn secondary" id="hero_button">
+                Смотреть уточек
+              </button>
+            </div>
+          </div>
+          <div class="hero__categories">
+            <nav>
+              <ul>
+                <li><a href=""> Классические </a></li>
+                <li><a href="">Уточки панки</a></li>
+                <li><a href="">Супергерои </a></li>
+                <li><a href="">Милые</a></li>
+                <li><a href="">Для детей </a></li>
+                <li><a href="">Взрослым</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="pop-up" id="popup">
+      <button class="pop-up__close" id="closePopup">
+        <img src="./src/icons/close.svg" alt="close" />
+      </button>
+      <form action="#" class="form">
+        <div class="form__section">
+          <label for="name">Имя <span class="_text-red">*</span></label>
+          <input
+            type="text"
+            placeholder="Введите ваше имя"
+            id="name"
+            name="name"
+          />
+        </div>
+        <div class="form__section">
+          <label for="phone">Телефон <span class="_text-red">*</span></label>
+          <input
+            type="text"
+            placeholder="+7 000 000 00 00 "
+            id="phone"
+            name="phone"
+          />
+        </div>
+        <div class="form__section">
+          <input class="btn primary" type="submit" id="submit" />
+        </div>
+      </form>
+      <div class="pop-up__license">
+        Нажимая кнопку “Отправить”, вы соглашаетесь с
+        <a href="#"> политикой конфиденциальности </a> и
+        <a href="#">договором оферты </a>
+      </div>
+    </div>
+    <div class="dark-overlay" id="darkOverlay"></div>
+    <script src="./src/scripts/script.js"></script>
+  </body>
+</html>
