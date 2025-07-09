@@ -303,6 +303,7 @@ main {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  margin-bottom: 8px;
 }
 .header__navigation ul li.carret::after {
   content: "";
