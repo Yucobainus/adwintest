@@ -100,10 +100,12 @@ function stateElementController(trigger, target) {
   });
 }
 
-function listElementController(listElementClass, className) {
+function listElementController(listElementClass, className, modificator) {
   document.querySelectorAll(`.${listElementClass}`).forEach((element) => {
     element.addEventListener("click", () => {
-      element.classList.add(className);
+      if (!element.classList.contains(modificator))
+        element.classList.add(className);
+
       document.querySelectorAll(`.${listElementClass}`).forEach((element2) => {
         if (element !== element2) {
           element2.classList.remove(className);
@@ -113,10 +115,24 @@ function listElementController(listElementClass, className) {
   });
 }
 
+function dropdownList(listElementClass, className, modificator) {
+  document
+    .querySelectorAll(`.${listElementClass}.${className}`)
+    .forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        element.classList.add(modificator);
+      });
+      element.addEventListener("mouseleave", () => {
+        element.classList.remove(modificator);
+      });
+    });
+}
+
 //Mobile Menu Class Switch
 
 listElementController("mobile-menu__item", "current");
-listElementController("header__navigation-item", "current");
+listElementController("header__navigation-item", "current", "carret");
+dropdownList("header__navigation-item", "carret", "current");
 
 // Open callback Popup Btn
 stateElementController(callback, overlay);
