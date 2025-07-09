@@ -579,4 +579,13 @@ main {
   100% {
     transform: rotate(0deg);
   }
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.input-error {
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */

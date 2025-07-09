@@ -688,3 +688,14 @@ main {
     transform: rotate(0deg);
   }
 }
+
+// errors
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.input-error {
+  border: 1px solid red;
+}
