@@ -481,6 +481,7 @@ main {
 
     &__images {
       .image-main {
+        transition: 0.2s;
         width: 343px;
         height: 343px;
         top: 254px;
@@ -489,6 +490,7 @@ main {
         transform: translateX(45%);
       }
       .image-text {
+        transition: 0.2s;
         width: 64px;
         height: 56px;
         top: 375px;
@@ -513,7 +515,7 @@ main {
     }
   }
 }
-@media (min-width: 590px) {
+@media (min-width: 565px) {
   .hero {
     &__images {
       .image-main {

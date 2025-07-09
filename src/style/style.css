@@ -429,6 +429,7 @@ main {
     margin-top: -10px;
   }
   .hero__images .image-main {
+    transition: 0.2s;
     width: 343px;
     height: 343px;
     top: 254px;
@@ -437,6 +438,7 @@ main {
     transform: translateX(45%);
   }
   .hero__images .image-text {
+    transition: 0.2s;
     width: 64px;
     height: 56px;
     top: 375px;
@@ -453,7 +455,7 @@ main {
     row-gap: 12px;
   }
 }
-@media (min-width: 590px) {
+@media (min-width: 565px) {
   .hero__images .image-main {
     width: 540px;
     height: 540px;
