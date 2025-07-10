@@ -702,3 +702,13 @@ main {
 .input-error {
   border: 1px solid red;
 }
+
+@media (max-height: 720px) and (min-width: 960px) {
+  .hero {
+    // .hero__content
+
+    &__content {
+      bottom: 80px;
+    }
+  }
+}

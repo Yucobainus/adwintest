@@ -591,4 +591,10 @@ main {
 
 .input-error {
   border: 1px solid red;
+}
+
+@media (max-height: 720px) and (min-width: 960px) {
+  .hero__content {
+    bottom: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
